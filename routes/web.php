@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,15 @@ Route::get('/lang/{lang}', function ($lang) {
     Session::put('locale', $lang);
     return redirect()->back(); })->name('lang.switch');
 
-
+//public views
+# Payment route
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/payment', [PaymentController::class, 'showPaymentForm']);
+Route::get('/payment/callback', [PaymentController::class, 'paymentCallback'])->name('payment.callback');
+Route::post('/handle-payment', [PaymentController::class, 'handlePayment']);
+
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
