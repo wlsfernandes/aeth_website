@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>REDET - Network od Theological Entities</title>
+    <title>AETH</title>
 
     <!-- Fav Icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -21,19 +21,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- Stylesheets -->
-    <link href="assets/css/font-awesome-all.css" rel="stylesheet">
-    <link href="assets/css/flaticon.css" rel="stylesheet">
-    <link href="assets/css/owl.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/nice-select.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet">
-    <link href="assets/css/jquery.bootstrap-touchspin.css" rel="stylesheet">
-    <link href="assets/css/color.css" rel="stylesheet">
-    <link href="assets/css/elpath.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/jquery.fancybox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/jquery-ui.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/jquery.bootstrap-touchspin.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/elpath.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
+
 
 </head>
 
@@ -328,7 +329,7 @@
                         </li> -->
                         <li class="btn-box">
                             <button class="donate-box-btn theme-btn-one">
-                                <i class="bi bi-heart-fill"></i> <span>@lang('membership')</span>
+                                <span>@lang('membership')</span> <i class="bi bi-heart-fill"></i>
                             </button>
 
                         </li>

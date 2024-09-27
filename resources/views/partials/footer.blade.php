@@ -80,9 +80,37 @@
         </div>
         <div class="footer-bottom centred">
             <div class="copyright">
-                <p>Copyright 2022 by <a href="index.php">devpromaster</a> All Right Reserved.</p>
+                <p><small>Copyright <span id="currentYear"></span> by <a href="https://devpromaster.com"
+                            target="_blank">devpromaster</a> All Right Reserved.</small>
+                </p>
             </div>
         </div>
     </div>
 </footer>
 <!-- main-footer end -->
+
+<script>
+    // Get the current year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+<!-- jQuery plugins -->
+<script src="{{ asset('assets/js/jquery.js') }}"></script>
+<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/js/owl.js') }}"></script>
+<script src="{{ asset('assets/js/wow.js') }}"></script>
+<script src="{{ asset('assets/js/validation.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
+<script src="{{ asset('assets/js/appear.js') }}"></script>
+<script src="{{ asset('assets/js/scrollbar.js') }}"></script>
+<script src="{{ asset('assets/js/isotope.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ asset('assets/js/parallax-scroll.js') }}"></script>
+<script src="{{ asset('assets/js/jquery-ui.js') }}"></script>
+<script src="{{ asset('assets/js/nav-tool.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.bootstrap-touchspin.js') }}"></script>
+<script src="{{ asset('assets/js/bxslider.js') }}"></script>
+
+<!-- main-js -->
+<script src="{{ asset('assets/js/script.js') }}"></script>

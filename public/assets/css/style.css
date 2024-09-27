@@ -400,9 +400,9 @@ img {
   padding-right: 26px;
 }
 
+/* here goes the icon  content: '\e901';   */ 
 .theme-btn-one span:before{
   position: absolute;
-  content: '\e901';
   font-family: 'icomoon';
   top: 0px;
   right: 0px;
