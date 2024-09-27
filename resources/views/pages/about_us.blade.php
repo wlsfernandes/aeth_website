@@ -4,7 +4,7 @@
 
 @section('content')
 
-<p style="margin-top:300px;">Something about the name off Jesus About us Page</p>
+<p style="margin-top:300px;">Page Content</p>
 
 
 @endsection

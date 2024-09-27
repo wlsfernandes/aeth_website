@@ -254,7 +254,7 @@
                                         <a href="{{url('/')}}">Home</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="{{ route('about_us') }}">@lang('header.about_us')</a>
+                                    <a href="#" class="dropdown-title" style="pointer-events: none;">@lang('header.about_us')</a>
                                         <ul>
                                             <li><a href="{{ route('about_us') }}">@lang('header.about_us')</a></li>
                                             <li><a href="{{ route('our_team') }}">@lang('header.our_team')</a></li>
@@ -267,7 +267,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="{{ route('services') }}">@lang('header.services')</a>
+                                    <a href="#" class="dropdown-title" style="pointer-events: none;">@lang('header.services')</a>
                                         <ul>
                                             <li><a
                                                     href="{{ route('certification_program') }}">@lang('header.certification_program')</a>
@@ -283,7 +283,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="{{ route('programs') }}">@lang('header.programs')</a>
+                                    <a href="#" class="dropdown-title" style="pointer-events: none;">@lang('header.programs')</a>
                                         <ul>
                                             <li><a href="{{ route('antioquia') }}">@lang('header.antioquia')</a></li>
                                             <li><a
@@ -299,7 +299,7 @@
                                         <a href="{{ route('bookstore') }}">@lang('header.bookstore')</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="{{ route('donations') }}">@lang('header.donations')</a>
+                                    <a href="#" class="dropdown-title" style="pointer-events: none;">@lang('header.donations')</a>
                                         <ul>
                                             <li><a href="{{ route('aeth_fund') }}">@lang('header.aeth_fund')</a></li>
                                             <li><a

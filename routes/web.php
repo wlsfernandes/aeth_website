@@ -39,7 +39,7 @@ Route::get('/resource-center', [HomeController::class, 'resourceCenter'])->name(
 Route::get('/compelling-preaching', [HomeController::class, 'compellingPreaching'])->name('compelling_preaching');
 Route::get('/bookstore', [HomeController::class, 'bookstore'])->name('bookstore');
 Route::get('/donations', [HomeController::class, 'donations'])->name('donations');
-Route::get('/aeth-fund', [HomeController::class, 'aethFund'])->name('aeth_fund');
+Route::get('/aeth_fund', [HomeController::class, 'aethFund'])->name('aeth_fund');
 Route::get('/gonzalez-center', [HomeController::class, 'gonzalezCenter'])->name('gonzalez_center');
 
 
