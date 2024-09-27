@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'welcome' => 'Welcome ENglish !',
+    'welcome' => 'Welcome English !',
 
 ];

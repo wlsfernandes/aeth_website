@@ -1,0 +1,22 @@
+<?php
+return [
+    'about_us' => 'About Us',
+    'our_team' => 'Our Team',
+    'open_positions' => 'Open Positions',
+    'events' => 'Events',
+    'blog' => 'Blog',
+    'contact_us' => 'Contact',
+    'services'=> 'Services',
+    'certification_program'=>'Certification Program',
+    'request_certification' => 'Request Certification',
+    'certified_institutions' => 'Certified Intitutions',
+    'memberships' => 'Memberships',
+    'programs' => 'Programs',
+    'antioquia' => 'Antioquia',
+    'resource_center' => 'Justo & Catherine González Center',
+    'compeling_preaching' => 'Compeling Preaching',
+    'bookstore' => 'Bookstore',
+    'donations' => 'Donations',
+    'aeth_fund' => 'AETH Educational Fund',
+    'gonzalez_center' => 'González Center',
+];

@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>González Resource Center</title>
+    <title>REDET - Network od Theological Entities</title>
 
     <!-- Fav Icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div id="donate-popup" class="donate-popup">
+        <!--  <div id="donate-popup" class="donate-popup">
             <div class="close-donate"><i class="fal fa-times"></i></div>
             <div class="popup-inner">
                 <div class="donate-content">
@@ -84,7 +84,7 @@
                                             <li>
                                                 <input type="radio" id="donate-amount-1" name="donate-amount"
                                                     checked="checked" />
-                                                <label for="donate-amount-1" data-amount="1000">$10</label>
+                                                <label for="donate-amount-1" data-amount="1500">$15</label>
                                             </li>
                                             <li>
                                                 <input type="radio" id="donate-amount-2" name="donate-amount" />
@@ -140,7 +140,7 @@
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 donate-form">
                                 <div class="form-inner">
-                                    <h3>Donar Information</h3>
+                                    <h3>Your Information</h3>
                                     <div class="row clearfix">
                                         <div class="col-lg-6 col-md-6 col-sm-12 column">
                                             <div class="form-group">
@@ -189,16 +189,24 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <header class="main-header header-style-two">
             <!-- header-top -->
             <div class="header-top">
                 <div class="top-inner">
                     <div class="top-left">
+                        <div class="social-links">
+                            <ul class="clearfix">
+                                <li><a href="https://www.facebook.com/groups/662799037578468" target="blank"><span
+                                            class="fab fa-facebook-square"></span></a></li>
+                                <li><a href="https://www.instagram.com/aeth_org/" target="blank"><span
+                                            class="fab fa-instagram"></span></a></li>
+
+                            </ul>
+                        </div>
                         <ul class="info">
-                            <li><a href="index.php"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="index.php"><i class="fab fa-facebook-f"></i></a></li>
+
                             <li>
                                 <a href="{{ route('lang.switch', ['lang' => 'en']) }}" title="English">
                                     <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/4x3/us.svg"
@@ -217,19 +225,19 @@
 
                         </ul>
                     </div>
-
-                    <div class="top-right">
+                    <!--  <div class="top-right">
                         <ul class="info">
                             <li><a href="mailto:jcgcenter@aeth.org"><i class="icon-22"></i>jcgcenter@aeth.org</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- header-lower -->
             <div class="header-lower">
                 <div class="outer-box">
                     <div class="logo-box">
-                        <figure class="logo"><a href="index.php"><img src="assets/images/aeth-logo.png" alt=""></a>
+                        <figure class="logo"> <a href="{{ url('/') }}"><img src="assets/images/aeth-logo.png"
+                                    alt=""></a>
                         </figure>
                     </div>
                     <div class="menu-area clearfix">
@@ -242,29 +250,68 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current"><a href="index.php">home</a>
+                                    <li class="current">
+                                        <a href="{{url('/')}}">Home</a>
                                     </li>
-                                    <li class="dropdown"><a href="about.php">about</a>
+                                    <li class="dropdown">
+                                        <a href="{{ route('about_us') }}">@lang('header.about_us')</a>
                                         <ul>
-                                            <li><a href="justogonzalez.php">Dr. Justo González</a></li>
-                                            <li><a href="catherinegonzalez.php">Dr. Catherine González</a></li>
-                                            <li><a href="gonzalez-ceo.php">González CEO</a></li>
-                                            <li><a href="faq.php">FAQ</a></li>
+                                            <li><a href="{{ route('about_us') }}">@lang('header.about_us')</a></li>
+                                            <li><a href="{{ route('our_team') }}">@lang('header.our_team')</a></li>
+                                            <li><a
+                                                    href="{{ route('open_positions') }}">@lang('header.open_positions')</a>
+                                            </li>
+                                            <li><a href="{{ route('events') }}">@lang('header.events')</a></li>
+                                            <li><a href="{{ route('blog') }}">@lang('header.blog')</a></li>
+                                            <li><a href="{{ route('contact_us') }}">@lang('header.contact_us')</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a>collection</a>
+                                    <li class="dropdown">
+                                        <a href="{{ route('services') }}">@lang('header.services')</a>
                                         <ul>
-                                            <li><a href="collection.php">collection</a></li>
-                                            <li><a href="video.php">video</a></li>
-                                            <li><a href="gallery.php">gallery</a></li>
+                                            <li><a
+                                                    href="{{ route('certification_program') }}">@lang('header.certification_program')</a>
+                                            </li>
+                                            <li><a
+                                                    href="{{ route('request_certification') }}">@lang('header.request_certification')</a>
+                                            </li>
+                                            <li><a
+                                                    href="{{ route('certified_institutions') }}">@lang('header.certified_institutions')</a>
+                                            </li>
+                                            <li><a href="{{ route('memberships') }}">@lang('header.memberships')</a>
+                                            </li>
                                         </ul>
                                     </li>
-                                    <li class="current"><a href="friends.php">friends</a></li>
+                                    <li class="dropdown">
+                                        <a href="{{ route('programs') }}">@lang('header.programs')</a>
+                                        <ul>
+                                            <li><a href="{{ route('antioquia') }}">@lang('header.antioquia')</a></li>
+                                            <li><a
+                                                    href="{{ route('resource_center') }}">@lang('header.resource_center')</a>
+                                            </li>
+                                            <li><a
+                                                    href="{{ route('compelling_preaching') }}">@lang('header.compeling_preaching')</a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li><a href="contact.php">contact</a></li>
+
+                                    <li class="current">
+                                        <a href="{{ route('bookstore') }}">@lang('header.bookstore')</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="{{ route('donations') }}">@lang('header.donations')</a>
+                                        <ul>
+                                            <li><a href="{{ route('aeth_fund') }}">@lang('header.aeth_fund')</a></li>
+                                            <li><a
+                                                    href="{{ route('gonzalez_center') }}">@lang('header.gonzalez_center')</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
                                 </ul>
                             </div>
                         </nav>
+
                     </div>
                     <ul class="nav-right">
                         <li class="search-box-outer search-toggler">
@@ -272,10 +319,11 @@
                         </li>
                         <!-- <li class="cart-box">
                             <a href="shop.html"><i class="icon-23"></i></a>
-                        </li> -->
+                        </li> 
                         <li class="btn-box">
-                            <button class="donate-box-btn theme-btn-one"><span>Donate Now</span></button>
-                        </li>
+                            <button
+                                class="donate-box-btn theme-btn-one"><span></span></button>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -293,12 +341,12 @@
                                 <!--Keep This Empty / Menu will come through Javascript-->
                             </nav>
                             <ul class="nav-right">
-                                <li class="search-box-outer search-toggler">
+                                <!--  <li class="search-box-outer search-toggler">
                                     <i class="icon-1"></i>
                                 </li>
                                 <li class="btn-box">
                                     <button class="donate-box-btn theme-btn-one"><span>Donate Now</span></button>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -311,25 +359,25 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
 
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.php"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.php"><img src="assets/images/aeth-logo.png" alt="" title=""></a>
+                </div>
                 <div class="menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
-                <div class="contact-info">
+                <!--    <div class="contact-info">
                     <h4>Contact Info</h4>
                     <ul>
                         <li>Chicago 12, Melborne City, USA</li>
                         <li><a href="tel:+8801682648101">+88 01682648101</a></li>
                         <li><a href="mailto:info@example.com">info@example.com</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="social-links">
                     <ul class="clearfix">
-                        <li><a href="index.php"><span class="fab fa-twitter"></span></a></li>
-                        <li><a href="index.php"><span class="fab fa-facebook-square"></span></a></li>
-                        <li><a href="index.php"><span class="fab fa-pinterest-p"></span></a></li>
-                        <li><a href="index.php"><span class="fab fa-instagram"></span></a></li>
-                        <li><a href="index.php"><span class="fab fa-youtube"></span></a></li>
+                        <li><a href="https://www.facebook.com/groups/662799037578468" target="blank"><span
+                                    class="fab fa-facebook-square"></span></a></li>
+                        <li><a href="https://www.instagram.com/aeth_org/" target="blank"><span
+                                    class="fab fa-instagram"></span></a></li>
                     </ul>
                 </div>
             </nav>
