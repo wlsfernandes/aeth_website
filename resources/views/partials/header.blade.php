@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- Stylesheets -->
     <link href="assets/css/font-awesome-all.css" rel="stylesheet">
@@ -202,6 +202,8 @@
                                             class="fab fa-facebook-square"></span></a></li>
                                 <li><a href="https://www.instagram.com/aeth_org/" target="blank"><span
                                             class="fab fa-instagram"></span></a></li>
+                                <li><a href="https://www.vimeo.com/aeth" target="blank"><span
+                                            class="fab fa-vimeo"></span></a></li>
 
                             </ul>
                         </div>
@@ -254,7 +256,8 @@
                                         <a href="{{url('/')}}">Home</a>
                                     </li>
                                     <li class="dropdown">
-                                    <a href="#" class="dropdown-title" style="pointer-events: none;">@lang('header.about_us')</a>
+                                        <a href="#" class="dropdown-title"
+                                            style="pointer-events: none;">@lang('header.about_us')</a>
                                         <ul>
                                             <li><a href="{{ route('about_us') }}">@lang('header.about_us')</a></li>
                                             <li><a href="{{ route('our_team') }}">@lang('header.our_team')</a></li>
@@ -267,7 +270,8 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                    <a href="#" class="dropdown-title" style="pointer-events: none;">@lang('header.services')</a>
+                                        <a href="#" class="dropdown-title"
+                                            style="pointer-events: none;">@lang('header.services')</a>
                                         <ul>
                                             <li><a
                                                     href="{{ route('certification_program') }}">@lang('header.certification_program')</a>
@@ -283,7 +287,8 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown">
-                                    <a href="#" class="dropdown-title" style="pointer-events: none;">@lang('header.programs')</a>
+                                        <a href="#" class="dropdown-title"
+                                            style="pointer-events: none;">@lang('header.programs')</a>
                                         <ul>
                                             <li><a href="{{ route('antioquia') }}">@lang('header.antioquia')</a></li>
                                             <li><a
@@ -299,7 +304,8 @@
                                         <a href="{{ route('bookstore') }}">@lang('header.bookstore')</a>
                                     </li>
                                     <li class="dropdown">
-                                    <a href="#" class="dropdown-title" style="pointer-events: none;">@lang('header.donations')</a>
+                                        <a href="#" class="dropdown-title"
+                                            style="pointer-events: none;">@lang('header.donations')</a>
                                         <ul>
                                             <li><a href="{{ route('aeth_fund') }}">@lang('header.aeth_fund')</a></li>
                                             <li><a
@@ -319,11 +325,13 @@
                         </li>
                         <!-- <li class="cart-box">
                             <a href="shop.html"><i class="icon-23"></i></a>
-                        </li> 
-                        <li class="btn-box">
-                            <button
-                                class="donate-box-btn theme-btn-one"><span></span></button>
                         </li> -->
+                        <li class="btn-box">
+                            <button class="donate-box-btn theme-btn-one">
+                                <i class="bi bi-heart-fill"></i> <span>@lang('membership')</span>
+                            </button>
+
+                        </li>
                     </ul>
                 </div>
             </div>

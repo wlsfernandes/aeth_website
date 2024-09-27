@@ -399,10 +399,9 @@ img {
   position: relative;
   padding-right: 26px;
 }
-
+ /*content: '\e901'; here goes te icon in the button */
 .theme-btn-one span:before{
   position: absolute;
-  content: '\e901';
   font-family: 'icomoon';
   top: 0px;
   right: 0px;
