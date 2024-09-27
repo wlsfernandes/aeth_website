@@ -24,23 +24,23 @@ Route::get('/lang/{lang}', function ($lang) {
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about_us');
 Route::get('/our-team', [HomeController::class, 'ourTeam'])->name('our_team');
-Route::get('/open-positions', [HomeController::class, 'openPositions'])->name('open_positions');
+Route::get('/open_positions', [HomeController::class, 'openPositions'])->name('open_positions');
 Route::get('/events', [HomeController::class, 'events'])->name('events');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/contact', [HomeController::class, 'contactUs'])->name('contact_us');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
-Route::get('/certification-program', [HomeController::class, 'certificationProgram'])->name('certification_program');
-Route::get('/request-certification', [HomeController::class, 'requestCertification'])->name('request_certification');
-Route::get('/certified-institutions', [HomeController::class, 'certifiedInstitutions'])->name('certified_institutions');
+Route::get('/certification_program', [HomeController::class, 'certificationProgram'])->name('certification_program');
+Route::get('/request_certification', [HomeController::class, 'requestCertification'])->name('request_certification');
+Route::get('/certified_institutions', [HomeController::class, 'certifiedInstitutions'])->name('certified_institutions');
 Route::get('/memberships', [HomeController::class, 'memberships'])->name('memberships');
 Route::get('/programs', [HomeController::class, 'programs'])->name('programs');
 Route::get('/antioquia', [HomeController::class, 'antioquia'])->name('antioquia');
-Route::get('/resource-center', [HomeController::class, 'resourceCenter'])->name('resource_center');
-Route::get('/compelling-preaching', [HomeController::class, 'compellingPreaching'])->name('compelling_preaching');
+Route::get('/resource_center', [HomeController::class, 'resourceCenter'])->name('resource_center');
+Route::get('/compelling_preaching', [HomeController::class, 'compellingPreaching'])->name('compelling_preaching');
 Route::get('/bookstore', [HomeController::class, 'bookstore'])->name('bookstore');
 Route::get('/donations', [HomeController::class, 'donations'])->name('donations');
 Route::get('/aeth_fund', [HomeController::class, 'aethFund'])->name('aeth_fund');
-Route::get('/gonzalez-center', [HomeController::class, 'gonzalezCenter'])->name('gonzalez_center');
+Route::get('/gonzalez_center', [HomeController::class, 'gonzalezCenter'])->name('gonzalez_center');
 
 
 Route::get('/payment', [PaymentController::class, 'showPaymentForm']);
