@@ -11,8 +11,22 @@
 
 @section('content') 
 <div class="container d-flex justify-content-center mt-5 mb-5">
-
     <div class="col-md-12">
+        @if (session()->has('success'))
+            <div class="alert alert-success" role="alert">
+                <i class="fas fa-check-circle"></i> <!-- Success icon -->
+                {{ session('success') }}
+            </div>
+        @endif
+        @if ($errors->any())
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li><i class="bx bx-error"></i> {{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <span>Choose your Payment Method</span>
         <div class="card">
             <div class="accordion" id="accordionExample">
@@ -51,7 +65,8 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="amount" class="form-label">Amount (in USD):</label>
-                                    <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }} class="form-control" required min="1">
+                                    <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }}
+                                        class="form-control" required min="1">
                                 </div>
 
                                 <!-- Card Holder's Name -->
@@ -78,7 +93,8 @@
 
                                 <input type="hidden" name="payment_method_id" id="payment-method-id">
 
-                                <button type="submit" id="card-button" class="btn-block mt-3" style="background-color:#330033;color:#fff">
+                                <button type="submit" id="card-button" class="btn-block mt-3"
+                                    style="background-color:#330033;color:#fff;height:50px;">
                                     Pay Now
                                 </button>
                             </div>
@@ -175,7 +191,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
     body {
-  /*      background-color: #f5eee7; */
+        /*      background-color: #f5eee7; */
         font-family: "Poppins", sans-serif;
         font-weight: 300;
     }

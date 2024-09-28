@@ -26,27 +26,27 @@
                         <h3>How Much?</h3>
                         <ul class="donate-list clearfix">
                             <li>
-                                <input type="radio" id="donate-amount-1" name="donate-amount" value="1500" checked />
+                                <input type="radio" id="donate-amount-1" name="donate-amount" value="15"  />
                                 <label for="donate-amount-1">$15</label>
                             </li>
                             <li>
-                                <input type="radio" id="donate-amount-2" name="donate-amount" value="2000" />
+                                <input type="radio" id="donate-amount-2" name="donate-amount" value="20" checked />
                                 <label for="donate-amount-2">$20</label>
                             </li>
                             <li>
-                                <input type="radio" id="donate-amount-3" name="donate-amount" value="3000" />
+                                <input type="radio" id="donate-amount-3" name="donate-amount" value="50" />
                                 <label for="donate-amount-3">$50</label>
                             </li>
                             <li>
-                                <input type="radio" id="donate-amount-4" name="donate-amount" value="4000" />
+                                <input type="radio" id="donate-amount-4" name="donate-amount" value="100" />
                                 <label for="donate-amount-4">$100</label>
                             </li>
                             <li>
-                                <input type="radio" id="donate-amount-5" name="donate-amount" value="5000" />
+                                <input type="radio" id="donate-amount-5" name="donate-amount" value="500" />
                                 <label for="donate-amount-5">$500</label>
                             </li>
                             <li>
-                                <input type="radio" id="donate-amount-6" name="donate-amount" value="10000" />
+                                <input type="radio" id="donate-amount-6" name="donate-amount" value="1000" />
                                 <label for="donate-amount-6">$1000</label>
                             </li>
                         </ul>

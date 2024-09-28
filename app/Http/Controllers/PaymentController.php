@@ -12,9 +12,6 @@ class PaymentController extends Controller
     public function showPaymentForm()
     {
         $amount = session('amount');
-        if (!$amount) {
-            return redirect()->route('home')->with('error', 'No donation amount specified.');
-        }
         return view('payment', compact('amount'));
     }
     public function handleRedirect(Request $request)
@@ -40,10 +37,6 @@ class PaymentController extends Controller
 
         if (!empty($customAmount) && $customAmount > 0) {
             $amount = $customAmount;
-        }
-
-        if ($amount <= 0) {
-            return redirect()->back()->with('error', 'Please enter a valid donation amount.');
         }
 
         return redirect()->route('payment')->with('amount', $amount);
