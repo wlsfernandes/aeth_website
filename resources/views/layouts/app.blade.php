@@ -12,11 +12,11 @@
     @include('partials.header') 
 </head>
 <body>
-
-    <div class="container">
+<div>
+    
         @yield('content') 
-    </div>
 
+        </div>
     @include('partials.footer') 
 </body>
 </html>

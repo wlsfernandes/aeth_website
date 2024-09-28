@@ -11,6 +11,12 @@
 <!-- Content here -->
 
 @section('content') 
-    <p>This is your content.</p>
-    <p style="margin-top:500px;"></p>
+<section class="page-title centred">
+    <div class="bg-layer" style="background-image: url(assets/images/gallery/1.jpg);"></div>
+    <div class="auto-container">
+        <div class="content-box">
+            <h1>@lang('header.complete_aeth_name')</h1>
+        </div>
+    </div>
+</section>
 @endsection

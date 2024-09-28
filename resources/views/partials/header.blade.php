@@ -68,129 +68,6 @@
                 </div>
             </div>
         </div>
-        <!--  <div id="donate-popup" class="donate-popup">
-            <div class="close-donate"><i class="fal fa-times"></i></div>
-            <div class="popup-inner">
-                <div class="donate-content">
-                    <div class="title-text centred">
-                        <h2>Donate Your Amount</h2>
-                    </div>
-                    <form action="index.php" method="post" class="default-form">
-                        <div class="row clearfix">
-                            <div class="col-lg-6 col-md-12 col-sm-12 donate-column">
-                                <div class="donate-box">
-                                    <div class="donate-option">
-                                        <h3>How Much?</h3>
-                                        <ul class="donate-list clearfix">
-                                            <li>
-                                                <input type="radio" id="donate-amount-1" name="donate-amount"
-                                                    checked="checked" />
-                                                <label for="donate-amount-1" data-amount="1500">$15</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="donate-amount-2" name="donate-amount" />
-                                                <label for="donate-amount-2" data-amount="2000">$20</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="donate-amount-3" name="donate-amount" />
-                                                <label for="donate-amount-3" data-amount="3000">$50</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="donate-amount-4" name="donate-amount" />
-                                                <label for="donate-amount-4" data-amount="4000">$100</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="donate-amount-5" name="donate-amount" />
-                                                <label for="donate-amount-5" data-amount="5000">$500</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="donate-amount-6" name="donate-amount" />
-                                                <label for="donate-amount-6" data-amount="5000">$1000</label>
-                                            </li>
-                                        </ul>
-                                        <div class="other-amount">
-                                            <div class="text">
-                                                <h4>Like to Donate</h4>
-                                                <p>Enter your custom amount</p>
-                                            </div>
-                                            <div class="amount-box">
-                                                <div class="item-quantity"><input class="quantity-spinner" type="text"
-                                                        value="600" name="quantity"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="payment-option">
-                                        <h3>Choose Payment Option</h3>
-                                        <ul class="payment-list clearfix">
-                                            <li>
-                                                <input type="radio" id="payment-method-1" name="payment-method"
-                                                    checked="checked" />
-                                                <label for="payment-method-1">Net Banking</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="payment-method-2" name="payment-method" />
-                                                <label for="payment-method-2">Credit - Debit Card</label>
-                                            </li>
-                                            <li>
-                                                <input type="radio" id="payment-method-3" name="payment-method" />
-                                                <label for="payment-method-3">Offline Payment</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 donate-form">
-                                <div class="form-inner">
-                                    <h3>Your Information</h3>
-                                    <div class="row clearfix">
-                                        <div class="col-lg-6 col-md-6 col-sm-12 column">
-                                            <div class="form-group">
-                                                <label>Your Name <span>*</span></label>
-                                                <input type="text" name="name" placeholder="example name" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12 column">
-                                            <div class="form-group">
-                                                <label>Email Address <span>*</span></label>
-                                                <input type="email" name="email" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12 column">
-                                            <div class="form-group">
-                                                <label>Phone</label>
-                                                <input type="text" name="phone" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12 column">
-                                            <div class="form-group">
-                                                <label>Address</label>
-                                                <input type="text" name="address" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
-                                            <div class="form-group message-btn">
-                                                <button type="submit" class="theme-btn-one">Donate Now</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 column">
-                                            <div class="form-group">
-                                                <label class="custom-control material-checkbox">
-                                                    <input type="checkbox" class="material-control-input">
-                                                    <span class="material-control-indicator"></span>
-                                                    <span class="description">I would like to donate automatically
-                                                        repeat each
-                                                        month</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div> -->
 
         <header class="main-header header-style-two">
             <!-- header-top -->
@@ -228,11 +105,13 @@
 
                         </ul>
                     </div>
-                    <!--  <div class="top-right">
+                    <div class="top-right">
                         <ul class="info">
-                            <li><a href="mailto:jcgcenter@aeth.org"><i class="icon-22"></i>jcgcenter@aeth.org</a></li>
+                            <li>
+                                <a href="mailto:info@aeth.org" style="font-size: 12px;">
+                                    info@aeth.org</a>
                         </ul>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <!-- header-lower -->
@@ -324,12 +203,13 @@
                         <li class="search-box-outer search-toggler">
                             <i class="icon-1"></i>
                         </li>
-                        <!-- <li class="cart-box">
-                            <a href="shop.html"><i class="icon-23"></i></a>
-                        </li> -->
+                        <li class="cart-box">
+                            <a href="{{ route('bookstore') }}"><i class="icon-23"></i></a>
+                        </li>
                         <li class="btn-box">
                             <button class="donate-box-btn theme-btn-one">
-                                <span>@lang('membership')</span> <i class="bi bi-heart-fill"></i>
+                                <a href="{{ route('memberships') }}" style="color: inherit; text-decoration: none;">@lang('membership')</a></span>
+                                <i class="bi bi-card-text"></i>
                             </button>
 
                         </li>

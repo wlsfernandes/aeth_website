@@ -14,7 +14,15 @@ class PaymentController extends Controller
         return view('payment'); // Display the payment form
     }
 
-
+    public function handleRedirect(Request $request)
+    {
+        $amount = $request->input('donate-amount');
+        $customAmount = $request->input('custom-amount');
+        if (!empty($customAmount) && $customAmount > 0) {
+            $amount = $customAmount;
+        }
+        return redirect()->route('payment')->with('amount', $amount);
+    }
     public function handlePayment(Request $request)
     {
         Stripe::setApiKey(env('STRIPE_SECRET'));

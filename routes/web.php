@@ -43,7 +43,8 @@ Route::get('/aeth-fund', [HomeController::class, 'aethFund'])->name('aeth_fund')
 Route::get('/gonzalez-center', [HomeController::class, 'gonzalezCenter'])->name('gonzalez_center');
 
 
-Route::get('/payment', [PaymentController::class, 'showPaymentForm']);
+Route::get('/payment', [PaymentController::class, 'showPaymentForm'])->name('payment');
+Route::post('/payment-redirect', [PaymentController::class, 'handleRedirect'])->name('payment.redirect');
 Route::get('/payment/callback', [PaymentController::class, 'paymentCallback'])->name('payment.callback');
 Route::post('/handle-payment', [PaymentController::class, 'handlePayment']);
 

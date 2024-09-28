@@ -1,20 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Stripe Payment')
+@section('title', 'AETH | Payment') 
 
-@section('content')
-@if(Session::has('success'))
-    <div style="color:green;">
-        {{ Session::get('success') }}
-    </div>
-@endif
+@section('meta-description', 'This is a brief description of the home page.')
 
-@if(Session::has('error'))
-    <div style="color:red;">
-        {{ Session::get('error') }}
-    </div>
-@endif
+@section('meta-keywords', 'home, welcome, introduction') 
 
+
+<!-- Content here -->
+
+@section('content') 
 <div class="container d-flex justify-content-center mt-5 mb-5">
 
     <div class="col-md-12">
@@ -38,7 +33,7 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body payment-card-body">
                                 <div class="d-flex align-items-center justify-content-between">
@@ -56,8 +51,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="amount" class="form-label">Amount (in USD):</label>
-                                    <input type="number" name="amount" id="amount" class="form-control" required min="1"
-                                        value="10">
+                                    <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }}class="form-control" required min="1">
                                 </div>
 
                                 <!-- Card Holder's Name -->
@@ -74,8 +68,8 @@
                                         <!-- Stripe's Card Number Element will be inserted here -->
                                     </div>
                                     <div id="card-expiry-element" class="stripe-element-container mr-2">
-                                            <!-- Stripe's Expiry Date Element will be inserted here -->
-                                        </div>
+                                        <!-- Stripe's Expiry Date Element will be inserted here -->
+                                    </div>
                                     <div id="card-cvc-element" class="stripe-element-container mt-3">
                                         <!-- Stripe's CVC Element will be inserted here -->
                                     </div>
@@ -132,8 +126,8 @@
     const cardCvc = elements.create('cardCvc');
     cardCvc.mount('#card-cvc-element');
 
-      // Create an instance of the expiry date Element
-      const cardExpiry = elements.create('cardExpiry');
+    // Create an instance of the expiry date Element
+    const cardExpiry = elements.create('cardExpiry');
     cardExpiry.mount('#card-expiry-element');
 
     // Handle form submission
@@ -175,14 +169,13 @@
         }
     });
 </script>
-@endsection
 
-@section('styles')
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
     body {
-        background-color: #f5eee7;
+  /*      background-color: #f5eee7; */
         font-family: "Poppins", sans-serif;
         font-weight: 300;
     }
@@ -287,4 +280,5 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 </style>
+
 @endsection

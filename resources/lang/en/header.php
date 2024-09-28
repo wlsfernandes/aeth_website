@@ -19,4 +19,5 @@ return [
     'donations' => 'Donations',
     'aeth_fund' => 'AETH Educational Fund',
     'gonzalez_center' => 'González Center',
+    'complete_aeth_name' => 'Association for Hispanic Theological Education (AETH)',
 ];
