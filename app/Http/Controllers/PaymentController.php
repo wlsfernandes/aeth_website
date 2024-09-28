@@ -11,18 +11,45 @@ class PaymentController extends Controller
 {
     public function showPaymentForm()
     {
-        return view('payment'); // Display the payment form
+        $amount = session('amount');
+        if (!$amount) {
+            return redirect()->route('home')->with('error', 'No donation amount specified.');
+        }
+        return view('payment', compact('amount'));
     }
-
     public function handleRedirect(Request $request)
     {
-        $amount = $request->input('donate-amount');
+        $amount = $request->input('donate-amount', 0);  
         $customAmount = $request->input('custom-amount');
+
         if (!empty($customAmount) && $customAmount > 0) {
             $amount = $customAmount;
         }
+
+        if ($amount <= 0) {
+            return redirect()->back()->with('error', 'Please enter a valid donation amount.');
+        }
+
         return redirect()->route('payment')->with('amount', $amount);
     }
+
+    public function handleDonation(Request $request)
+    {
+        $amount = $request->input('donate-amount', 0); 
+        $customAmount = $request->input('custom-amount');
+
+        if (!empty($customAmount) && $customAmount > 0) {
+            $amount = $customAmount;
+        }
+
+        if ($amount <= 0) {
+            return redirect()->back()->with('error', 'Please enter a valid donation amount.');
+        }
+
+        return redirect()->route('payment')->with('amount', $amount);
+    }
+
+
     public function handlePayment(Request $request)
     {
         Stripe::setApiKey(env('STRIPE_SECRET'));

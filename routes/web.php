@@ -44,6 +44,7 @@ Route::get('/gonzalez-center', [HomeController::class, 'gonzalezCenter'])->name(
 
 
 Route::get('/payment', [PaymentController::class, 'showPaymentForm'])->name('payment');
+Route::post('/payment-donation', [PaymentController::class, 'handleDonation'])->name('payment.donation');
 Route::post('/payment-redirect', [PaymentController::class, 'handleRedirect'])->name('payment.redirect');
 Route::get('/payment/callback', [PaymentController::class, 'paymentCallback'])->name('payment.callback');
 Route::post('/handle-payment', [PaymentController::class, 'handlePayment']);

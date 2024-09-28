@@ -13,7 +13,7 @@
 <div class="container d-flex justify-content-center mt-5 mb-5">
 
     <div class="col-md-12">
-        <span>Payment Method</span>
+        <span>Choose your Payment Method</span>
         <div class="card">
             <div class="accordion" id="accordionExample">
                 <div class="card">
@@ -33,7 +33,7 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body payment-card-body">
                                 <div class="d-flex align-items-center justify-content-between">
@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="amount" class="form-label">Amount (in USD):</label>
-                                    <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }}class="form-control" required min="1">
+                                    <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }} class="form-control" required min="1">
                                 </div>
 
                                 <!-- Card Holder's Name -->
@@ -78,7 +78,7 @@
 
                                 <input type="hidden" name="payment_method_id" id="payment-method-id">
 
-                                <button type="submit" id="card-button" class="btn btn-primary btn-block mt-3">
+                                <button type="submit" id="card-button" class="btn-block mt-3" style="background-color:#330033;color:#fff">
                                     Pay Now
                                 </button>
                             </div>
