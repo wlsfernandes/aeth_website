@@ -20,4 +20,10 @@ return [
     'aeth_fund' => 'AETH Educational Fund',
     'gonzalez_center' => 'González Center',
     'complete_aeth_name' => 'Association for Hispanic Theological Education (AETH)',
+    'choose_payment' => 'Choose your Payment Method',
+    'credit_card' => 'Credit Card',
+    'amount_usd' => 'Amount (in USD)',
+    'card_name'=> 'Card Holder`s Name',
+    'credit_debit'=> 'Credit or Debit Card',
+    'pay_now' => 'Pay Now',
 ];

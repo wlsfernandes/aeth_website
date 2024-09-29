@@ -27,9 +27,18 @@
                 </ul>
             </div>
         @endif
-        <span>Choose your Payment Method</span>
+        <span><b>@lang('header.choose_payment')</b></span>
         <div class="card">
-            <div class="accordion" id="accordionExample">
+            <p class="small" style="color:#330033;margin-top:20px;">
+                <img src="{{ asset('assets/images/icons/locked-card.png') }}"
+                    style="width: 40px; height: auto; margin-right: 15px;">
+                Your payment is processed through a highly secure, third-party platform that meets the most stringent
+                security standards in the industry. AETH partners with trusted providers like Stripe to ensure that all
+                transactions are fully encrypted and protected, safeguarding your personal and financial data.
+                Please note that for each transaction, a standard processing fee of 2.90% is applied by the credit card
+                operator.</i>
+            </p>
+            <div class="accordion" id="accordionExample" style="color:#330033;margin-top:20px;">
                 <div class="card">
                     <form action="/handle-payment" method="POST" id="payment-form">
                         @csrf
@@ -38,10 +47,10 @@
                                 <button class="btn btn-light btn-block text-left p-3 rounded-0" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <span>Credit card</span>
+                                        <span>@lang('header.credit_card')</span>
                                         <div class="icons">
-                                            <img src="{{ asset('assets/images/icons/creditcard.jpg') }}"
-                                                style="width: 45px; height: auto; margin-right: 5px;">
+                                            <img src="{{ asset('assets/images/icons/locked-card.png') }}"
+                                                style="width: 40px; height: auto; margin-right: 5px;">
                                         </div>
                                     </div>
                                 </button>
@@ -51,7 +60,7 @@
                             data-parent="#accordionExample">
                             <div class="card-body payment-card-body">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <span>Credit card</span>
+                                <label for="amount" class="form-label">@lang('header.amount_usd')</label>
                                     <div class="icons">
                                         <img src="{{ asset('assets/images/icons/visa.jpg') }}" alt="Visa"
                                             style="width: 30px; height: auto; margin-right: 5px;">
@@ -64,21 +73,21 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="amount" class="form-label">Amount (in USD):</label>
+                                   
                                     <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }}
                                         class="form-control" required min="1">
                                 </div>
 
                                 <!-- Card Holder's Name -->
                                 <div class="mb-3">
-                                    <label for="card-holder-name" class="form-label">Card Holder's Name</label>
+                                    <label for="card-holder-name" class="form-label">@lang('header.card_name')</label>
                                     <input type="text" id="card-holder-name" name="card_holder_name"
                                         class="form-control" placeholder="Name on card" required>
                                 </div>
 
                                 <!-- Stripe Elements Placeholder -->
                                 <div class="mb-3">
-                                    <label for="card-element" class="form-label">Credit or Debit Card</label>
+                                    <label for="card-element" class="form-label">@lang('header.credit_debit')</label>
                                     <div id="card-number-element" class="stripe-element-container">
                                         <!-- Stripe's Card Number Element will be inserted here -->
                                     </div>
@@ -95,7 +104,7 @@
 
                                 <button type="submit" id="card-button" class="btn-block mt-3"
                                     style="background-color:#330033;color:#fff;height:50px;">
-                                    Pay Now
+                                    @lang('header.pay_now')
                                 </button>
                             </div>
                     </form>
