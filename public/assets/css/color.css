@@ -37,7 +37,7 @@
 }
 
 .donate-content .donate-option .donate-list :checked+label{
-	background: #E04237;
+	background: #330033;
 }
 
 .donate-content .payment-option .payment-list :checked+label {
