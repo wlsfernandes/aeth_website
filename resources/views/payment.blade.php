@@ -27,17 +27,10 @@
                 </ul>
             </div>
         @endif
-        <span><b>@lang('header.choose_payment')</b></span>
+
         <div class="card">
-            <p class="small" style="color:#330033;margin-top:20px;">
-                <img src="{{ asset('assets/images/icons/locked-card.png') }}"
-                    style="width: 40px; height: auto; margin-right: 15px;">
-                Your payment is processed through a highly secure, third-party platform that meets the most stringent
-                security standards in the industry. AETH partners with trusted providers like Stripe to ensure that all
-                transactions are fully encrypted and protected, safeguarding your personal and financial data.
-                Please note that for each transaction, a standard processing fee of 2.90% is applied by the credit card
-                operator.</i>
-            </p>
+
+            <span><b>@lang('header.choose_payment')</b></span>
             <div class="accordion" id="accordionExample" style="color:#330033;margin-top:20px;">
                 <div class="card">
                     <form action="/handle-payment" method="POST" id="payment-form">
@@ -60,7 +53,7 @@
                             data-parent="#accordionExample">
                             <div class="card-body payment-card-body">
                                 <div class="d-flex align-items-center justify-content-between">
-                                <label for="amount" class="form-label">@lang('header.amount_usd')</label>
+                                    <label for="amount" class="form-label">@lang('header.amount_usd')</label>
                                     <div class="icons">
                                         <img src="{{ asset('assets/images/icons/visa.jpg') }}" alt="Visa"
                                             style="width: 30px; height: auto; margin-right: 5px;">
@@ -73,7 +66,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                   
+
                                     <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }}
                                         class="form-control" required min="1">
                                 </div>
@@ -106,6 +99,12 @@
                                     style="background-color:#330033;color:#fff;height:50px;">
                                     @lang('header.pay_now')
                                 </button>
+                              
+                                <p class="small" style="color:#330033;margin-top:20px;">
+                                    <img src="{{ asset('assets/images/icons/locked-card.png') }}"
+                                        style="width: 40px; height: auto; margin-right: 15px;">
+                                    @lang('header.disclaimer')</i>
+                                </p>
                             </div>
                     </form>
                 </div>
