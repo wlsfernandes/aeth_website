@@ -65,12 +65,22 @@
                                             style="width: 30px; height: auto; margin-right: 5px;">
                                     </div>
                                 </div>
+
                                 <div class="mb-3">
 
                                     <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }}
                                         class="form-control" required min="1">
                                 </div>
-
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">@lang('header.name'):</label>
+                                    <input type="text" id="name" name="name" class="form-control"
+                                        placeholder="Your name..." required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">@lang('header.email'):</label>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        placeholder="email..." required>
+                                </div>
                                 <!-- Card Holder's Name -->
                                 <div class="mb-3">
                                     <label for="card-holder-name" class="form-label">@lang('header.card_name')</label>
@@ -99,7 +109,7 @@
                                     style="background-color:#330033;color:#fff;height:50px;">
                                     @lang('header.pay_now')
                                 </button>
-                              
+
                                 <p class="small" style="color:#330033;margin-top:20px;">
                                     <img src="{{ asset('assets/images/icons/locked-card.png') }}"
                                         style="width: 40px; height: auto; margin-right: 15px;">

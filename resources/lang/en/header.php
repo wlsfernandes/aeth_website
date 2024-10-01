@@ -26,5 +26,8 @@ return [
     'card_name'=> 'Card Holder`s Name',
     'credit_debit'=> 'Credit or Debit Card',
     'pay_now' => 'Pay Now',
-    'disclaimer' => 'Your payment is processed through a highly secure, third-party platform that meets the most stringent security standards in the industry. AETH partners with trusted providers like Stripe to ensure that all transactions are fully encrypted and protected, safeguarding your personal a financial data.Please note that for each transaction, a standard processing fee of 2.90% is applied by the credit card operator.'
+    'disclaimer' => 'Your payment is processed through a highly secure, third-party platform that meets the most stringent security standards in the industry. AETH partners with trusted providers like Stripe to ensure that all transactions are fully encrypted and protected, safeguarding your personal a financial data.Please note that for each transaction, a standard processing fee of 2.90% is applied by the credit card operator.',
+    'name' => 'Name',
+    'email'=> 'Email',
+
 ];
