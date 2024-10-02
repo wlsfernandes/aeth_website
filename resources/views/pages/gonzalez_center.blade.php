@@ -39,9 +39,9 @@
                 </div>
             </div>
         </div>
-        <!-- Donatin form -->
-        @include('partials.donation-form')
-        <!-- Donatin form end -->
+        <!-- Donation form -->
+        @include('partials.donation-form', ['type' => 'donation', 'destination' => 'González Center']);
+        <!-- Donation form end -->
     </div>
 </section>
 

@@ -35,12 +35,19 @@ class PaymentController extends Controller
     {
         $amount = $request->input('donate-amount', 0);
         $customAmount = $request->input('custom-amount');
+        $type = $request->input('type', '');
+        $destination = $request->input('destination', '');
+
 
         if (!empty($customAmount) && $customAmount > 0) {
             $amount = $customAmount;
         }
 
-        return redirect()->route('payment')->with('amount', $amount);
+        return redirect()->route('payment')->with([
+            'amount' => $amount,
+            'type' => $type,
+            'destination' => $destination,
+        ]);
     }
 
 
@@ -101,21 +108,23 @@ class PaymentController extends Controller
                 ]);
             }
 
-           
+
             if ($paymentIntent->status === 'succeeded') {
 
                 $receiptUrl = null;
                 if (isset($paymentIntent->charges->data) && count($paymentIntent->charges->data) > 0) {
-                    $receiptUrl = $paymentIntent->charges->data[0]->receipt_url; 
+                    $receiptUrl = $paymentIntent->charges->data[0]->receipt_url;
                 }
                 Payment::create([
                     'name' => $request->name,
                     'email' => $request->email,
+                    'type' => $request->type,
+                    'destination' => $request->destination,
                     'amount' => $request->amount,
                     'currency' => $paymentIntent->currency,
-                    'payment_method_id' => $paymentIntent->payment_method, 
+                    'payment_method_id' => $paymentIntent->payment_method,
                     'status' => $paymentIntent->status,
-                    'stripe_payment_intent_id' => $paymentIntent->id, 
+                    'stripe_payment_intent_id' => $paymentIntent->id,
                     'receipt_url' => $receiptUrl,
                     'customer_id' => $paymentIntent->customer,
                     'payment_date' => now(),

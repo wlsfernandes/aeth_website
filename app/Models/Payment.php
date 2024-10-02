@@ -13,6 +13,7 @@ class Payment extends Model
         'email',
         'amount',
         'type',
+        'destination',
         'stripe_payment_intent_id',
         'payment_method',
         'currency',

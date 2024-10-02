@@ -23,6 +23,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12 donate-column">
                 <div class="donate-box">
                     <div class="donate-option">
+                    <input type="hidden" name="type" value="{{ $type }}">
+                    <input type="hidden" name="destination" value="{{ $destination }}">
                         <h3>How Much?</h3>
                         <ul class="donate-list clearfix">
                             <li>

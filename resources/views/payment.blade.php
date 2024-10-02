@@ -65,7 +65,8 @@
                                             style="width: 30px; height: auto; margin-right: 5px;">
                                     </div>
                                 </div>
-
+                                <input type="hidden" name="type" value="{{ session('type') }}">
+                                <input type="hidden" name="destination" value="{{ session('destination') }}">
                                 <div class="mb-3">
 
                                     <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }}
