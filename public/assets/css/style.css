@@ -1688,7 +1688,7 @@ img {
 .main-menu .navigation > li > ul > li > a:hover,
 .main-menu .navigation > li > .megamenu li > a:hover{
   padding-left: 45px;
-  color: #770077;
+  color: #fff;
 }
 
 .main-menu .navigation > li > ul > li:last-child > a,
@@ -5194,7 +5194,7 @@ div#mCSB_1_container{
 
 .page-title{
   position: relative;
-  padding: 140px 0px 155px 0px;
+  padding: 300px 0px 155px 0px;
 }
 
 .page-title .bg-layer{
