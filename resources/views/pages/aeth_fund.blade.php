@@ -37,7 +37,7 @@
             </div>
         </div>
         <!-- Donatin form -->
-        @include('partials.donation-form', ['type' => 'donation', 'destination' => 'annual fund']);
+        @include('partials.donation-form', ['type' => 'donation', 'program' => 'AETH']);
         <!-- Donatin form end -->
     </div>
 </section>

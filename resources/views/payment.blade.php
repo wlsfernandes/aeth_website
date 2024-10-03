@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'AETH | Payment') 
+@section('title', '#somosAETH | Payment') 
 
 @section('meta-description', 'This is a brief description of the home page.')
 
@@ -65,12 +65,14 @@
                                             style="width: 30px; height: auto; margin-right: 5px;">
                                     </div>
                                 </div>
-                                <input type="hidden" name="type" value="{{ session('type') }}">
-                                <input type="hidden" name="destination" value="{{ session('destination') }}">
+                                <input type="hidden" name="type" value="{{ $type ?? '' }}">
+                                <input type="hidden" name="program" value="{{ $program ?? '' }}">
                                 <div class="mb-3">
 
-                                    <input type="number" name="amount" id="amount" value={{ $amount ?? 0.00 }}
-                                        class="form-control" required min="1">
+                                    <input type="number" name="amount" id="amount"
+                                        value="{{ number_format($amount ?? 0, 2, '.', '') }}" class="form-control"
+                                        required min="1" step="0.01">
+
                                 </div>
                                 <div class="mb-3">
                                     <label for="name" class="form-label">@lang('header.name'):</label>

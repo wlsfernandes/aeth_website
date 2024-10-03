@@ -17,14 +17,14 @@
     <div class="title-text centred" style="margin:50px;">
         <h2 style="margin:50px;color:#330033"><i>Donate</i></h2>
     </div>
-    <form action="{{ route('payment.donation') }}" method="POST" class="default-form">
+    <form action="{{ route('donationRedirectPayment') }}" method="POST" class="default-form">
         @csrf
         <div class="row clearfix">
             <div class="col-lg-12 col-md-12 col-sm-12 donate-column">
                 <div class="donate-box">
                     <div class="donate-option">
                     <input type="hidden" name="type" value="{{ $type }}">
-                    <input type="hidden" name="destination" value="{{ $destination }}">
+                    <input type="hidden" name="program" value="{{ $program }}">
                         <h3>How Much?</h3>
                         <ul class="donate-list clearfix">
                             <li>

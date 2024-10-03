@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->nullable();
             $table->decimal('amount', 8, 2); 
             $table->string('type')->nullable(); 
-            $table->string('destination')->nullable(); 
+            $table->string('program')->nullable(); 
             $table->string('stripe_payment_intent_id')->nullable();
             $table->string('payment_method')->nullable();
             $table->string('currency', 3)->nullable();

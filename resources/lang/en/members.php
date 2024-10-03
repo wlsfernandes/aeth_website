@@ -27,5 +27,10 @@ return [
     'benefit19' => 'Opportunity to become certified to participate in program quality certification processes.',
 
     'student_membership' => 'Student Membership',
-
+    '5' => '$5 a month',
+    '50' => '$50 a year',
+    '10' => '$10 a month',
+    '100' => '$100 a year',
+    '20' => '$20 a month',
+    '200' => '$200 a month',
 ];

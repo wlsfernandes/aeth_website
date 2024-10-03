@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'AETH | Members') 
+@section('title', '#somosAETH | Members') 
 
 @section('meta-description', 'This is a brief description of the home page.')
 
@@ -53,7 +53,7 @@
                                 <img src="assets/images/gallery/aeth-member3.jpg" alt=""
                                     style="max-width: 500px; height: auto;">
                             </figure>
-                            <h1>@lang('members.inst_membership')</h1>
+                            <h1><i class="bi bi-building"></i> @lang('members.inst_membership')</h1>
                             <div class="row" style="margin-top:50px;">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <ul class="list-style-one clearfix">
@@ -75,15 +75,26 @@
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-sm-12" style="margin:50px;">
-                                <p>Select the payment frequency for the type of membership you want:</p>
-                                <div style="margin:50px;">
-                                    <button class="donate-box-btn theme-btn-one"
-                                        style="padding:12px 1px 12px 12px;"><span>$20 Montlhy</span></button>
-                                    <button class="donate-box-btn theme-btn-one"
-                                        style="padding:12px 1px 12px 12px;margin-left:120px;"><span>$200
-                                            Yearly</span></button>
+                                <div style="margin:50px; display: flex; gap: 10px;">
+                                    <form action="{{ route('membershipRedirectPayment') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="amount" value="20">
+                                        <button type="submit" class="donate-box-btn theme-btn-one"
+                                            style="padding:12px 1px 12px 12px;">
+                                            <span>@lang('members.20')</span>
+                                        </button>
+                                    </form>
+                                    <form action="{{ route('membershipRedirectPayment') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="amount" value="200">
+                                        <button type="submit" class="donate-box-btn theme-btn-one"
+                                            style="padding:12px 1px 12px 12px;">
+                                            <span>@lang('members.200')</span>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -105,7 +116,7 @@
                                 <img src="assets/images/gallery/aeth-member6.jpg" alt=""
                                     style="max-width: 500px; height: auto;">
                             </figure>
-                            <h1>@lang('members.ind_membership')</h1>
+                            <h1><i class="bi bi-person-arms-up"></i> @lang('members.ind_membership')</h1>
                             <div class="row" style="margin-top:50px;">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <ul class="list-style-one clearfix">
@@ -127,13 +138,23 @@
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-sm-12" style="margin:50px;">
-                                <p>Select the payment frequency for the type of membership you want:</p>
-                                <div style="margin:50px;">
-                                    <button class="donate-box-btn theme-btn-one"
-                                        style="padding:12px 1px 12px 12px;"><span>$10 Montlhy</span></button>
-                                    <button class="donate-box-btn theme-btn-one"
-                                        style="padding:12px 1px 12px 12px;margin-left:120px;"><span>$100
-                                            Yearly</span></button>
+                                <div style="margin:50px; display: flex; gap: 10px;">
+                                    <form action="{{ route('membershipRedirectPayment') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="amount" value="10">
+                                        <button type="submit" class="donate-box-btn theme-btn-one"
+                                            style="padding:12px 1px 12px 12px;">
+                                            <span>@lang('members.10')</span>
+                                        </button>
+                                    </form>
+                                    <form action="{{ route('membershipRedirectPayment') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="amount" value="100">
+                                        <button type="submit" class="donate-box-btn theme-btn-one"
+                                            style="padding:12px 1px 12px 12px;">
+                                            <span>@lang('members.100')</span>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +176,7 @@
                                 <img src="assets/images/gallery/aeth-member4.jpg" alt=""
                                     style="max-width: 500px; height: auto;">
                             </figure>
-                            <h1>@lang('members.student_membership')</h1>
+                            <h1><i class="bi bi-mortarboard"></i> @lang('members.student_membership')</h1>
                             <div class="row" style="margin-top:50px;">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <ul class="list-style-one clearfix">
@@ -177,13 +198,23 @@
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-sm-12" style="margin:50px;">
-                                <p>Select the payment frequency for the type of membership you want:</p>
-                                <div style="margin:50px;">
-                                    <button class="donate-box-btn theme-btn-one"
-                                        style="padding:12px 1px 12px 12px;"><span>$10 Montlhy</span></button>
-                                    <button class="donate-box-btn theme-btn-one"
-                                        style="padding:12px 1px 12px 12px;margin-left:120px;"><span>$100
-                                            Yearly</span></button>
+                                <div style="margin:50px; display: flex; gap: 10px;">
+                                    <form action="{{ route('membershipRedirectPayment') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="amount" value="5">
+                                        <button type="submit" class="donate-box-btn theme-btn-one"
+                                            style="padding:12px 1px 12px 12px;">
+                                            <span>@lang('members.5')</span>
+                                        </button>
+                                    </form>
+                                    <form action="{{ route('membershipRedirectPayment') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="amount" value="50">
+                                        <button type="submit" class="donate-box-btn theme-btn-one"
+                                            style="padding:12px 1px 12px 12px;">
+                                            <span>@lang('members.50')</span>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
