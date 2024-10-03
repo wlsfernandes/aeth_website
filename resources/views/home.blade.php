@@ -90,4 +90,92 @@
         </div>
     </div>
 </section>
+
+  <!-- cause-section -->
+  <section class="cause-section sec-pad">
+            <div class="auto-container">
+                <div class="sec-title centred mb_50">
+                    <h2>@lang('messages.program_resources')</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 cause-block">
+                        <div class="cause-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="#"><img src="assets/images/gallery/certification.jpg" alt=""></a></figure>
+                                    <div class="category"><a href="#">@lang('messages.certification')</a></div>
+                                </div>
+                                <div class="lower-content">
+                                    <div class="text">
+                                        <h3><a href="#">xxxxxxxxxx <br />xxxxxxx</a></h3>
+                                        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="85%"><div class="count-text">85%</div></div>
+                                        </div>
+                                        <div class="donate-text">
+                                            <h6><span>$5,020</span> Raised</h6>
+                                            <h6><span>$8,000</span> Target</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 cause-block">
+                        <div class="cause-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="#"><img src="assets/images/gallery/meet1.jpg" style="width:470px;height:270px;"></a></figure>
+                                    <div class="category"><a href="#">@lang('messages.resource_center')</a></div>
+                                </div>
+                                <div class="lower-content">
+                                    <div class="text">
+                                        <h3><a href="#">dddd <br />ddddddd</a></h3>
+                                        <p>ddddddddddddddddddddddd.</p>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="50%"><div class="count-text">50%</div></div>
+                                        </div>
+                                        <div class="donate-text">
+                                            <h6><span>$6,020</span> Raised</h6>
+                                            <h6><span>$12,000,000</span> Target</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 cause-block">
+                        <div class="cause-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="#"><img src="assets/images/gallery/compelling.jpg" style="width:470px;height:270px;"></a></figure>
+                                    <div class="category"><a href="#">@lang('messages.preaching')</a></div>
+                                </div>
+                                <div class="lower-content">
+                                    <div class="text">
+                                        <h3><a href="#">xxxxxxxxxxxx<br />ddddddd</a></h3>
+                                        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                                    </div>
+                                    <div class="progress-box">
+                                        <div class="bar">
+                                            <div class="bar-inner count-bar" data-percent="90%"><div class="count-text">90%</div></div>
+                                        </div>
+                                        <div class="donate-text">
+                                            <h6><span>$9,080</span> Raised</h6>
+                                            <h6><span>$10,000</span> Target</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cause-section end -->
+
 @endsection
