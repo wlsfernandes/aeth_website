@@ -203,8 +203,8 @@
                         </li>
                         <li class="btn-box">
                             <button class="donate-box-btn theme-btn-one">
-                                <a href="{{ route('memberships') }}" style="color: inherit; text-decoration: none;">@lang('membership')</a></span>
-                                <i class="bi bi-card-text"></i>
+                                <a href="{{ route('memberships') }}" style="color: inherit; text-decoration: none;font-size:14px;">@lang('membership')</a></span>
+                                <i class="bi bi-person-vcard-fill"></i>
                             </button>
 
                         </li>
